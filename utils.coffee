@@ -1,10 +1,8 @@
-Person = require './person'
-
 class Utils
   t: ->
     10
   person: ->
-    console.log new Person
+    console.log(new require('./person')())
 
 exports = module.exports = Utils
 
